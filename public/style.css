@@ -1,14 +1,57 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #C1B5AD;
-  }
+}
 
-  #map {
+#map {
     height: 100vh;
     width: 100vw;
-  }
+    position: relative
+}
+
+.plan-container {
+    transform: translateY(3.5em);
+    /* translateX(70em); */
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #778899;
+    height: 100vh;
+    width: 30vw;
+    /* float: right; */
+    position: absolute;
+    background-color: #b0c4de;
+    z-index: 2
+}
+
+.button-and-dropdown {
+    width: 90%;
+    display: inline-flex
+}
+
+.dropdown {
+    margin-right: 10%
+}
+
+select {
+    width: 60px
+}
+
+header {
+    display: flex;
+    position: fixed;
+    margin: 0 4em;
+    padding: 10px;
+    width: calc(100vw - 8em);
+    color: #fff;
+    background-color: rgba(37, 37, 37, 0.8);
+    border-radius: 0 0 1em 1em;
+    /* the following z-index ensures that header remains layered above every other element while scrolling */
+    z-index: 2;
+    transform: translateY(-2.5em);
+    transition: all 0.5s ease;
+}
