@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Planner</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./style.css"></link>
+    <script src="./bundle.js" defer></script>
+    
+  </head>
+  <body>
+      <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-items">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">trip planner</a>
+            </div>
+            <div id="nav-items" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="/home/">home</a></li>
+                  <li><a href="/about">about</a></li>
+                  <li><a href="/contact">contact</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    <div id="map">
+        <div class="plan-container">
+            <div class="activity-type">
+              <div class="hotels">
+                <div id="hotel-choices">Hotels</div>
+                <button class="btn-outline-danger">x</button>
+              </div>
+              <div class="restaurants">
+                  <div id="restaurant-choices">Restaurants</div>
+                  <button class="btn-outline-danger">x</button>
+              </div>
+              <div class="activity">
+                  <div id="activity-choices">Things To Do</div>
+                  <button class="btn-outline-danger">x</button>
+              </div>
+            </div>
+            <div class="itinerary-type">
+              <div class="hotels">
+                  <div id="hotel-itinerary">My Hotel</div>
+                  <button class="btn-outline-danger">x</button>
+              </div>
+              <div class="restaurants">
+                  <div id="restaurant-itinerary">My Restaurants</div>
+                  <button class="btn-outline-danger">x</button>
+              </div>
+              <div class="activity">
+                  <div id="activity-itinerary">My Activities</div>
+                  <button class="btn-outline-danger">x</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+  </body>
+</html>
